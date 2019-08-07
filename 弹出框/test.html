@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .div1{
+        height: 200px;
+        width: 200px;
+        background: red;
+        text-align: center;
+        float: left;
+        line-height: 200px;
+    }
+    .div2{
+        height: 200px;
+        width: 200px;
+        background: black;
+        text-align: center;
+        float: left;
+        line-height: 200px;
+    }
+    .div3{
+        height: 200px;
+        width: 200px;
+        background: blue;
+        text-align: center;
+        float: left;
+        line-height: 200px;
+    }
+    .div4{
+        height: 200px;
+        width: 200px;
+        background: yellowgreen;
+        text-align: center;
+        float: left;
+        line-height: 200px;
+    }
+    #center a{
+        color:white;
+        text-decoration: none;
+    }
+    #big{
+        position:absolute;
+        background: rgb(0,0,0,0.5) url(img/1.jpg) center center no-repeat;
+        /* background-size: */
+        left:0px;
+        top:0px;
+        width:100%;
+        height: 100%;
+        display: none;
+        }
+    #sma{
+        position:absolute;
+        background: rgb(0,0,0,0.5) url(img/2.jpg) center center no-repeat;
+        /* background-size: */
+        left:0px;
+        top:0px;
+        width:100%;
+        height: 100%;
+        display: none;
+        }
+    #x{
+        position:absolute;
+        background: rgb(0,0,0,0.5) url(img/3.jpg) center center no-repeat;
+        /* background-size: */
+        left:0px;
+        top:0px;
+        width:100%;
+        height: 100%;
+        display: none;
+        }
+    #y{
+        position:absolute;
+        background: rgb(0,0,0,0.5) url(img/4.jpg) center center no-repeat;
+        /* background-size: */
+        left:0px;
+        top:0px;
+        width:100%;
+        height: 100%;
+        display: none;
+        }
+    #z{
+        position:absolute;
+        background: rgb(0,0,0,0.5) url(img/5.jpg) center center no-repeat;
+        /* background-size: */
+        left:0px;
+        top:0px;
+        width:100%;
+        height: 100%;
+        display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="center">
+        <div class="div1"><a href="#">这是一个链接</a></div>
+        <div class="div2"><a href="#">这是一个链接</a></div>
+        <div class="div3"><a href="#">这是一个链接</a></div>
+        <div class="div4"><a href="#">这是一个链接</a></div>
+    </div>
+    <div id="big"></div>
+    <div id="sma"></div>
+    <div id="x"></div>
+    <div id="y"></div>
+    <div id="z"></div>
+    <script src="../弹出框/zepto.js"></script>
+    <script src="../弹出框/touch.js"></script>
+    <script>
+        $('.div1 a').on('click',function(){
+            $('#big').show();
+           
+            
+            
+        });
+        $('#big').on('click',function(){
+            $(this).hide();
+        });
+
+        $('.div2 a').on('click',function(){
+            $('#sma').show();
+
+            
+            
+        });
+        $('#sma').on('click',function(){
+            $(this).hide();
+        });
+
+        $('.div3 a').on('click',function(){
+            $('#x').show();
+
+            
+            
+        });
+        $('#x').on('click',function(){
+            $(this).hide();
+        });
+
+        $('.div4 a').on('click',function(){
+            $('#y').show();
+
+            
+            
+        });
+        $('#y').on('click',function(){
+            $(this).hide();
+        });
+
+        $('.div5 a').on('click',function(){
+            $('#z').show();
+
+            
+            
+        });
+        $('#z').on('click',function(){
+            $(this).hide();
+        });
+
+    </script>
+</body>
+</html>
